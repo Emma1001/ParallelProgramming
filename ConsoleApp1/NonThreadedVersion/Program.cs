@@ -27,7 +27,7 @@ namespace NonThreadedVersion
 
         public static void GetWordsArray()
         {
-            string text = File.ReadAllText("book.txt", Encoding.Default);
+            string text = File.ReadAllText(@"../../../../book.txt", Encoding.Default);
 
             char[] delimiters = new char[] { ' ', '\r', '\n' };
             var words = text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries).OrderBy(w => w.Length).ToArray();

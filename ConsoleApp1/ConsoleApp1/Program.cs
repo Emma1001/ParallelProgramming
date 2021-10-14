@@ -14,7 +14,7 @@ namespace ConsoleApp1
             var watch = new Stopwatch();
             watch.Start();
 
-            string text = File.ReadAllText("book.txt", Encoding.Default);
+            string text = File.ReadAllText(@"../../../../book.txt", Encoding.Default);
 
             string[] words = GetWordsArray(text);
 
